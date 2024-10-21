@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "node ./backend/index.js",
+    "start-frontend": "cd image-uploader && npm start"
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs-node": "^4.21.0",
+    "express": "^4.21.1",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  }
+}
